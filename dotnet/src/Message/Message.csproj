@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;netstandard2.1</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <LangVersion>latest</LangVersion>
+
+    <!-- NuGet Package Properties -->
+    <PackageId>Message.Net</PackageId>
+    <Version>0.5.0</Version>
+    <Authors>SpecWorks</Authors>
+    <Company>SpecWorks</Company>
+    <Product>Message.Net</Product>
+    <Description>A complete .NET library for parsing, validating, and serializing Internet message format (message/rfc822) data according to RFC 5322 and MIME (RFC 2045-2049). Includes support for multipart messages, attachments, content-transfer-encoding, and encoded words.</Description>
+    <PackageTags>email;message;rfc822;rfc5322;mime;parser;serializer;validator;rfc2045;rfc2046</PackageTags>
+    <PackageProjectUrl>https://github.com/spec-works/message</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/spec-works/message</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReleaseNotes>Initial release with full RFC 5322 and MIME support.</PackageReleaseNotes>
+    <Copyright>Copyright (c) 2024-2026 SpecWorks</Copyright>
+
+    <!-- Assembly Properties -->
+    <AssemblyName>Message</AssemblyName>
+    <RootNamespace>Message</RootNamespace>
+
+    <!-- Source Link Support -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>

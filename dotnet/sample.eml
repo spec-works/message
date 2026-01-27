@@ -1,0 +1,39 @@
+From: "John Doe" <john.doe@example.com>
+To: recipient@example.com, "Jane Smith" <jane@example.org>
+Cc: cc-recipient@example.com
+Subject: Sample Email Message
+Date: Mon, 27 Jan 2026 10:30:00 -0500
+Message-ID: <abc123@example.com>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="----=_Part_12345"
+
+This is a multi-part message in MIME format.
+
+------=_Part_12345
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+This is the plain text version of the email message.
+
+Best regards,
+John Doe
+
+------=_Part_12345
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=3D"utf-8">
+</head>
+<body>
+    <p>Hello,</p>
+    <p>This is the <strong>HTML version</strong> of the email message.</p>
+    <p>Best regards,<br>John Doe</p>
+</body>
+</html>
+
+------=_Part_12345--

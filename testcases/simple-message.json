@@ -1,0 +1,13 @@
+{
+  "name": "sample-simple",
+  "description": "Simple text email message",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: Hello World\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <test-123@example.com>\r\n\r\nThis is a simple text message.",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "To": "recipient@example.com",
+    "Subject": "Hello World",
+    "Message-ID": "<test-123@example.com>"
+  },
+  "expectedBody": "This is a simple text message.",
+  "isValid": true
+}

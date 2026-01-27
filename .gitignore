@@ -1,0 +1,20 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# NuGet
+*.nupkg
+packages/
+
+# Test results
+TestResults/
+
+# OS files
+.DS_Store
+Thumbs.db

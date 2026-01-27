@@ -1,0 +1,12 @@
+{
+  "name": "sample-multipart",
+  "description": "Multipart alternative email with text and HTML",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: Multipart Message\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMIME-Version: 1.0\r\nContent-Type: multipart/alternative; boundary=\"boundary123\"\r\n\r\n--boundary123\r\nContent-Type: text/plain\r\n\r\nPlain text\r\n--boundary123\r\nContent-Type: text/html\r\n\r\n<html>HTML</html>\r\n--boundary123--",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "MIME-Version": "1.0"
+  },
+  "isMultipart": true,
+  "expectedPartCount": 2,
+  "isValid": true
+}
