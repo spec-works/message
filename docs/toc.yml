@@ -1,0 +1,8 @@
+- name: ← SpecWorks Factory
+  href: https://spec-works.github.io/
+- name: Home
+  href: index.md
+- name: .NET
+  href: dotnet/toc.yml
+- name: GitHub
+  href: https://github.com/spec-works/message
