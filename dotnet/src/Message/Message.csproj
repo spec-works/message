@@ -27,6 +27,10 @@
     <AssemblyName>Message</AssemblyName>
     <RootNamespace>Message</RootNamespace>
 
+    <!-- Strong Naming -->
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Message.snk</AssemblyOriginatorKeyFile>
+
     <!-- Source Link Support -->
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
