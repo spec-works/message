@@ -504,4 +504,18 @@ Body";
             Assert.Equal("test.html", ct.GetParameter("name"));
         }
     }
+
+    public class AssemblyTests
+    {
+        [Fact]
+        public void Assembly_IsStrongNamed()
+        {
+            var assembly = typeof(MessageParser).Assembly;
+            var publicKeyToken = assembly.GetName().GetPublicKeyToken();
+            
+            Assert.NotNull(publicKeyToken);
+            Assert.NotEmpty(publicKeyToken);
+            Assert.True(publicKeyToken.Length > 0, "Assembly should be strong-named");
+        }
+    }
 }
