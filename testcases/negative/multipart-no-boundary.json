@@ -1,0 +1,8 @@
+{
+  "name": "multipart-no-boundary",
+  "description": "Multipart message missing required boundary parameter (RFC 2046 section 5.1.1)",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: Missing Boundary\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <nobound-123@example.com>\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed\r\n\r\nThis should fail.",
+  "isMultipart": true,
+  "isValid": false,
+  "expectedError": "multipart content type missing boundary parameter"
+}

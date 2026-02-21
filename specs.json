@@ -1,82 +1,51 @@
 {
-  "$schema": "https://spec-works.github.io/registry/schemas/specs.schema.json",
-  "name": "message",
-  "mediaType": "message/rfc822",
-  "description": "Internet Message Format parser and validator for email messages",
-  "specifications": [
+  "linkset": [
     {
-      "id": "rfc822",
-      "title": "Standard for ARPA Internet Text Messages",
-      "url": "https://www.rfc-editor.org/rfc/rfc822.html",
-      "status": "obsoleted",
-      "obsoletedBy": "rfc2822",
-      "year": 1982,
-      "notes": "Original Internet message format specification"
+      "href": "https://www.rfc-editor.org/rfc/rfc5322.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "Internet Message Format"
     },
     {
-      "id": "rfc2822",
-      "title": "Internet Message Format",
-      "url": "https://www.rfc-editor.org/rfc/rfc2822.html",
-      "status": "obsoleted",
-      "obsoletedBy": "rfc5322",
-      "year": 2001,
-      "notes": "Updated and obsoleted RFC 822"
+      "href": "https://www.rfc-editor.org/rfc/rfc2045.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "MIME Part One: Format of Internet Message Bodies"
     },
     {
-      "id": "rfc5322",
-      "title": "Internet Message Format",
-      "url": "https://www.rfc-editor.org/rfc/rfc5322.html",
-      "status": "current",
-      "year": 2008,
-      "notes": "Current standard for Internet message format"
+      "href": "https://www.rfc-editor.org/rfc/rfc2046.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "MIME Part Two: Media Types"
     },
     {
-      "id": "rfc2045",
-      "title": "MIME Part One: Format of Internet Message Bodies",
-      "url": "https://www.rfc-editor.org/rfc/rfc2045.html",
-      "status": "current",
-      "year": 1996,
-      "notes": "Defines MIME headers and content-transfer-encoding"
+      "href": "https://www.rfc-editor.org/rfc/rfc2047.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "MIME Part Three: Message Header Extensions for Non-ASCII Text"
     },
     {
-      "id": "rfc2046",
-      "title": "MIME Part Two: Media Types",
-      "url": "https://www.rfc-editor.org/rfc/rfc2046.html",
-      "status": "current",
-      "year": 1996,
-      "notes": "Defines multipart, message, and other MIME media types"
+      "href": "https://www.rfc-editor.org/rfc/rfc2049.html",
+      "type": "text/html",
+      "rel": "describedby",
+      "title": "MIME Part Five: Conformance Criteria and Examples"
     },
     {
-      "id": "rfc2047",
-      "title": "MIME Part Three: Message Header Extensions for Non-ASCII Text",
-      "url": "https://www.rfc-editor.org/rfc/rfc2047.html",
-      "status": "current",
-      "year": 1996,
-      "notes": "Defines encoded-word syntax for non-ASCII in headers"
+      "href": "https://github.com/spec-works/message/tree/main/testcases",
+      "rel": "https://specworks.org/rels/tests",
+      "type": "text/html",
+      "title": "Shared test cases"
     },
     {
-      "id": "rfc2048",
-      "title": "MIME Part Four: Registration Procedures",
-      "url": "https://www.rfc-editor.org/rfc/rfc2048.html",
-      "status": "obsoleted",
-      "obsoletedBy": "rfc4288",
-      "year": 1996,
-      "notes": "MIME type registration procedures (now in RFC 4288/6838)"
+      "href": "https://github.com/spec-works/message/actions",
+      "rel": "https://specworks.org/rels/tests",
+      "type": "text/html",
+      "title": "CI Test Results"
     },
     {
-      "id": "rfc2049",
-      "title": "MIME Part Five: Conformance Criteria and Examples",
-      "url": "https://www.rfc-editor.org/rfc/rfc2049.html",
-      "status": "current",
-      "year": 1996,
-      "notes": "MIME conformance requirements and examples"
+      "rel": "registry",
+      "title": "Part registry entry",
+      "href": "https://spec-works.github.io/registry/parts/message/"
     }
-  ],
-  "implementations": {
-    "dotnet": {
-      "path": "dotnet",
-      "packageName": "Message.Net",
-      "status": "active"
-    }
-  }
+  ]
 }

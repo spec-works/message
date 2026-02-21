@@ -1,0 +1,7 @@
+{
+  "name": "multiple-from-no-sender",
+  "description": "Message with multiple From addresses but no Sender header (RFC 5322 section 3.6.2 requires Sender when From has multiple)",
+  "input": "From: alice@example.com, bob@example.com\r\nTo: recipient@example.com\r\nSubject: Missing Sender\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <nosender-123@example.com>\r\n\r\nMultiple from without sender.",
+  "isValid": false,
+  "expectedError": "Sender header required when From contains multiple addresses"
+}

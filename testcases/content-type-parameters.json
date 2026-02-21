@@ -1,0 +1,18 @@
+{
+  "name": "content-type-parameters",
+  "description": "Message with multiple Content-Type parameters (RFC 2045 section 5.1)",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: Content-Type Params\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <ct-123@example.com>\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=iso-8859-1; format=flowed; delsp=yes\r\n\r\nText with parameters.",
+  "expectedHeaders": {
+    "Content-Type": "text/plain; charset=iso-8859-1; format=flowed; delsp=yes"
+  },
+  "expectedContentType": {
+    "mediaType": "text/plain",
+    "charset": "iso-8859-1",
+    "parameters": {
+      "format": "flowed",
+      "delsp": "yes"
+    }
+  },
+  "expectedBody": "Text with parameters.",
+  "isValid": true
+}

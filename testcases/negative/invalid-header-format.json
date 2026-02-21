@@ -1,0 +1,7 @@
+{
+  "name": "invalid-header-format",
+  "description": "Message with malformed header line (missing colon separator)",
+  "input": "From sender@example.com\r\nTo: recipient@example.com\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\n\r\nBody.",
+  "isValid": false,
+  "expectedError": "invalid header format"
+}

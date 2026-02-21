@@ -1,0 +1,7 @@
+{
+  "name": "empty-message",
+  "description": "Empty message input",
+  "input": "",
+  "isValid": false,
+  "expectedError": "empty message"
+}

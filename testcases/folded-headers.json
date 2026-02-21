@@ -1,0 +1,13 @@
+{
+  "name": "folded-headers",
+  "description": "Message with folded (multi-line) headers per RFC 5322 section 2.2.3",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: This is a very long subject line that\r\n has been folded across multiple lines\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <folded-123@example.com>\r\n\r\nBody text.",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "To": "recipient@example.com",
+    "Subject": "This is a very long subject line that has been folded across multiple lines",
+    "Message-ID": "<folded-123@example.com>"
+  },
+  "expectedBody": "Body text.",
+  "isValid": true
+}

@@ -1,0 +1,13 @@
+{
+  "name": "multiple-from-with-sender",
+  "description": "Message with multiple From addresses requiring Sender header (RFC 5322 section 3.6.2)",
+  "input": "From: alice@example.com, bob@example.com\r\nSender: alice@example.com\r\nTo: recipient@example.com\r\nSubject: Multiple Authors\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <multifrom-123@example.com>\r\n\r\nMessage with multiple authors.",
+  "expectedHeaders": {
+    "From": "alice@example.com, bob@example.com",
+    "Sender": "alice@example.com",
+    "To": "recipient@example.com",
+    "Subject": "Multiple Authors"
+  },
+  "expectedBody": "Message with multiple authors.",
+  "isValid": true
+}

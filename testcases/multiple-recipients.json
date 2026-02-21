@@ -1,0 +1,18 @@
+{
+  "name": "multiple-recipients",
+  "description": "Message with multiple To addresses (RFC 5322 section 3.4)",
+  "input": "From: sender@example.com\r\nTo: alice@example.com, bob@example.com, carol@example.com\r\nSubject: Group Message\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <multi-123@example.com>\r\n\r\nMessage to multiple recipients.",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "To": "alice@example.com, bob@example.com, carol@example.com",
+    "Subject": "Group Message"
+  },
+  "expectedRecipientCount": 3,
+  "expectedRecipients": [
+    "alice@example.com",
+    "bob@example.com",
+    "carol@example.com"
+  ],
+  "expectedBody": "Message to multiple recipients.",
+  "isValid": true
+}

@@ -1,0 +1,12 @@
+{
+  "name": "base64-body",
+  "description": "Message with base64 Content-Transfer-Encoding (RFC 2045 section 6.8)",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: Base64 Body\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <b64-123@example.com>\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: base64\r\n\r\nSGVsbG8gV29ybGQ=",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "Content-Transfer-Encoding": "base64"
+  },
+  "expectedRawBody": "SGVsbG8gV29ybGQ=",
+  "expectedDecodedBody": "Hello World",
+  "isValid": true
+}

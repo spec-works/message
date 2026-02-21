@@ -1,0 +1,18 @@
+{
+  "name": "mime-headers",
+  "description": "Message with MIME headers including Content-Type and charset (RFC 2045)",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: MIME Message\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <mime-123@example.com>\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\n\r\nUTF-8 text body.",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "To": "recipient@example.com",
+    "Subject": "MIME Message",
+    "MIME-Version": "1.0",
+    "Content-Type": "text/plain; charset=utf-8"
+  },
+  "expectedContentType": {
+    "mediaType": "text/plain",
+    "charset": "utf-8"
+  },
+  "expectedBody": "UTF-8 text body.",
+  "isValid": true
+}

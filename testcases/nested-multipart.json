@@ -1,0 +1,24 @@
+{
+  "name": "nested-multipart",
+  "description": "Nested multipart: multipart/mixed containing multipart/alternative (RFC 2046 section 5.1)",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: Nested Multipart\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <nested-123@example.com>\r\nMIME-Version: 1.0\r\nContent-Type: multipart/mixed; boundary=\"outer\"\r\n\r\n--outer\r\nContent-Type: multipart/alternative; boundary=\"inner\"\r\n\r\n--inner\r\nContent-Type: text/plain\r\n\r\nPlain text version\r\n--inner\r\nContent-Type: text/html\r\n\r\n<html><body>HTML version</body></html>\r\n--inner--\r\n--outer\r\nContent-Type: application/pdf\r\nContent-Disposition: attachment; filename=\"doc.pdf\"\r\nContent-Transfer-Encoding: base64\r\n\r\nJVBERi0xLjQ=\r\n--outer--",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "Subject": "Nested Multipart",
+    "MIME-Version": "1.0"
+  },
+  "isMultipart": true,
+  "expectedPartCount": 2,
+  "expectedParts": [
+    {
+      "contentType": "multipart/alternative",
+      "isMultipart": true,
+      "expectedPartCount": 2
+    },
+    {
+      "contentType": "application/pdf",
+      "contentDisposition": "attachment; filename=\"doc.pdf\""
+    }
+  ],
+  "isValid": true
+}

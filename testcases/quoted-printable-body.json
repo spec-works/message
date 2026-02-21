@@ -1,0 +1,12 @@
+{
+  "name": "quoted-printable-body",
+  "description": "Message with quoted-printable Content-Transfer-Encoding (RFC 2045 section 6.7)",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: QP Body\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <qp-123@example.com>\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\nHello =C3=B6 World",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "Content-Transfer-Encoding": "quoted-printable"
+  },
+  "expectedRawBody": "Hello =C3=B6 World",
+  "expectedDecodedBody": "Hello ö World",
+  "isValid": true
+}

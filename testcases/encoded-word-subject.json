@@ -1,0 +1,12 @@
+{
+  "name": "encoded-word-subject",
+  "description": "Message with RFC 2047 encoded-word in Subject header (base64)",
+  "input": "From: sender@example.com\r\nTo: recipient@example.com\r\nSubject: =?UTF-8?B?SGVsbG8gV29ybGQ=?=\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <encoded-123@example.com>\r\n\r\nBody text.",
+  "expectedHeaders": {
+    "From": "sender@example.com",
+    "Subject": "=?UTF-8?B?SGVsbG8gV29ybGQ=?="
+  },
+  "expectedDecodedSubject": "Hello World",
+  "expectedBody": "Body text.",
+  "isValid": true
+}

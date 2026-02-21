@@ -1,0 +1,7 @@
+{
+  "name": "missing-from",
+  "description": "Message missing required From header (RFC 5322 section 3.6)",
+  "input": "To: recipient@example.com\r\nSubject: No From\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <nofrom-123@example.com>\r\n\r\nBody without From header.",
+  "isValid": false,
+  "expectedError": "missing required From header"
+}

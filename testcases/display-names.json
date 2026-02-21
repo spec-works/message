@@ -1,0 +1,19 @@
+{
+  "name": "display-names",
+  "description": "Message with display names in address headers (RFC 5322 section 3.4)",
+  "input": "From: \"John Doe\" <john@example.com>\r\nTo: \"Jane Smith\" <jane@example.com>\r\nSubject: Display Names\r\nDate: Mon, 27 Jan 2026 10:00:00 +0000\r\nMessage-ID: <display-123@example.com>\r\n\r\nMessage with display names.",
+  "expectedHeaders": {
+    "From": "\"John Doe\" <john@example.com>",
+    "To": "\"Jane Smith\" <jane@example.com>"
+  },
+  "expectedFromAddress": {
+    "displayName": "John Doe",
+    "address": "john@example.com"
+  },
+  "expectedToAddress": {
+    "displayName": "Jane Smith",
+    "address": "jane@example.com"
+  },
+  "expectedBody": "Message with display names.",
+  "isValid": true
+}
