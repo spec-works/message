@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MimePart | Message Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MimePart | Message Documentation ">
+      
+      <meta name="description" content="Represents a MIME part within a multipart message.">
+      <link rel="icon" href="../../images/logo.svg">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spec-works/message/new/main/apiSpec/new?filename=Message_MimePart.md&amp;value=---%0Auid%3A%20Message.MimePart%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../images/logo.svg" alt="Message">
+            Message
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Message.MimePart">
+
+
+
+  <h1 id="Message_MimePart" data-uid="Message.MimePart" class="text-break">
+Class MimePart  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L677"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Message.html">Message</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Message.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a MIME part within a multipart message.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MimePart</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">MimePart</span></div>
+    </dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Message_MimePart_BinaryContent_" data-uid="Message.MimePart.BinaryContent*"></a>
+
+  <h3 id="Message_MimePart_BinaryContent" data-uid="Message.MimePart.BinaryContent">
+  BinaryContent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Binary content (for attachments).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[]? BinaryContent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">byte</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_Content_" data-uid="Message.MimePart.Content*"></a>
+
+  <h3 id="Message_MimePart_Content" data-uid="Message.MimePart.Content">
+  Content
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L689"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The raw content of this part (may be encoded).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Content { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_ContentDescription_" data-uid="Message.MimePart.ContentDescription*"></a>
+
+  <h3 id="Message_MimePart_ContentDescription" data-uid="Message.MimePart.ContentDescription">
+  ContentDescription
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L746"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ContentDescription { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_ContentDisposition_" data-uid="Message.MimePart.ContentDisposition*"></a>
+
+  <h3 id="Message_MimePart_ContentDisposition" data-uid="Message.MimePart.ContentDisposition">
+  ContentDisposition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L734"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ContentDisposition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_ContentId_" data-uid="Message.MimePart.ContentId*"></a>
+
+  <h3 id="Message_MimePart_ContentId" data-uid="Message.MimePart.ContentId">
+  ContentId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ContentId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_ContentTransferEncoding_" data-uid="Message.MimePart.ContentTransferEncoding*"></a>
+
+  <h3 id="Message_MimePart_ContentTransferEncoding" data-uid="Message.MimePart.ContentTransferEncoding">
+  ContentTransferEncoding
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ContentTransferEncoding { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_ContentType_" data-uid="Message.MimePart.ContentType*"></a>
+
+  <h3 id="Message_MimePart_ContentType" data-uid="Message.MimePart.ContentType">
+  ContentType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L713"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? ContentType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_ContentTypeHeader_" data-uid="Message.MimePart.ContentTypeHeader*"></a>
+
+  <h3 id="Message_MimePart_ContentTypeHeader" data-uid="Message.MimePart.ContentTypeHeader">
+  ContentTypeHeader
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContentTypeHeader? ContentTypeHeader { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Message.ContentTypeHeader.html">ContentTypeHeader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_DecodedBinaryContent_" data-uid="Message.MimePart.DecodedBinaryContent*"></a>
+
+  <h3 id="Message_MimePart_DecodedBinaryContent" data-uid="Message.MimePart.DecodedBinaryContent">
+  DecodedBinaryContent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L778"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the decoded content as bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[]? DecodedBinaryContent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">byte</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_DecodedContent_" data-uid="Message.MimePart.DecodedContent*"></a>
+
+  <h3 id="Message_MimePart_DecodedContent" data-uid="Message.MimePart.DecodedContent">
+  DecodedContent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L759"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the decoded content as a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? DecodedContent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_Filename_" data-uid="Message.MimePart.Filename*"></a>
+
+  <h3 id="Message_MimePart_Filename" data-uid="Message.MimePart.Filename">
+  Filename
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L709"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The filename for attachments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Filename { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_Headers_" data-uid="Message.MimePart.Headers*"></a>
+
+  <h3 id="Message_MimePart_Headers" data-uid="Message.MimePart.Headers">
+  Headers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L684"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Headers for this MIME part.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyDictionary&lt;string, List&lt;HeaderField&gt;&gt; Headers { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">IReadOnlyDictionary</span>&lt;<span class="xref">string</span>, <span class="xref">List</span>&lt;<a class="xref" href="Message.HeaderField.html">HeaderField</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_IsAttachment_" data-uid="Message.MimePart.IsAttachment*"></a>
+
+  <h3 id="Message_MimePart_IsAttachment" data-uid="Message.MimePart.IsAttachment">
+  IsAttachment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L704"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this part is an attachment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAttachment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_IsMultipart_" data-uid="Message.MimePart.IsMultipart*"></a>
+
+  <h3 id="Message_MimePart_IsMultipart" data-uid="Message.MimePart.IsMultipart">
+  IsMultipart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L805"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this part is itself multipart.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMultipart { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">bool</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_Parts_" data-uid="Message.MimePart.Parts*"></a>
+
+  <h3 id="Message_MimePart_Parts" data-uid="Message.MimePart.Parts">
+  Parts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L699"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Nested parts (for multipart within multipart).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MimePart&gt; Parts { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">List</span>&lt;<a class="xref" href="Message.MimePart.html">MimePart</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Message_MimePart_AddHeader_" data-uid="Message.MimePart.AddHeader*"></a>
+
+  <h3 id="Message_MimePart_AddHeader_System_String_System_String_" data-uid="Message.MimePart.AddHeader(System.String,System.String)">
+  AddHeader(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L811"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddHeader(string name, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_GetHeaderValue_" data-uid="Message.MimePart.GetHeaderValue*"></a>
+
+  <h3 id="Message_MimePart_GetHeaderValue_System_String_" data-uid="Message.MimePart.GetHeaderValue(System.String)">
+  GetHeaderValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L834"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetHeaderValue(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Message_MimePart_SetHeader_" data-uid="Message.MimePart.SetHeader*"></a>
+
+  <h3 id="Message_MimePart_SetHeader_System_String_System_String_" data-uid="Message.MimePart.SetHeader(System.String,System.String)">
+  SetHeader(string, string?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L822"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHeader(string name, string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <span class="xref">string</span></dt>
+    <dd></dd>
+    <dt><code>value</code> <span class="xref">string</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spec-works/message/blob/main/dotnet/src/Message/Message.DOM.cs/#L677" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <a href='https://spec-works.github.io/'>SpecWorks Factory</a> | <a href='https://github.com/spec-works/message'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
