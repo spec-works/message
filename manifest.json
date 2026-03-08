@@ -1,0 +1,242 @@
+{
+  "source_base_path": "/home/runner/work/message/message/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.ContentTypeHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.ContentTypeHeader.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.ContentTypeHeader",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.ContentTypeHeader.yml\" sourcestartlinenumber=\"1\">Represents a parsed Content-Type header value.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.HeaderField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.HeaderField.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.HeaderField",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.HeaderField.yml\" sourcestartlinenumber=\"1\">Represents a single header field in a message.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.MailboxAddress.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.MailboxAddress.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.MailboxAddress",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.MailboxAddress.yml\" sourcestartlinenumber=\"1\">Represents an email address with optional display name.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.MessageObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.MessageObject.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.MessageObject",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.MessageObject.yml\" sourcestartlinenumber=\"1\">Represents an Internet message (RFC 5322) with optional MIME content (RFC 2045-2049).\nThis is the root document object model for message/rfc822 content.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.MessageParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.MessageParser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.MessageParser",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.MessageParser.yml\" sourcestartlinenumber=\"1\">Parser for message/rfc822 format (RFC 5322 with MIME support from RFC 2045-2049).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.MessageSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.MessageSerializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.MessageSerializer",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.MessageSerializer.yml\" sourcestartlinenumber=\"1\">Serializer for message/rfc822 format (RFC 5322 with MIME support).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.MessageValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.MessageValidator.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.MessageValidator",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.MessageValidator.yml\" sourcestartlinenumber=\"1\">Validator for message/rfc822 format according to RFC 5322 and MIME RFCs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.MimePart.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.MimePart.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.MimePart",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.MimePart.yml\" sourcestartlinenumber=\"1\">Represents a MIME part within a multipart message.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.ParseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.ParseException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.ParseException",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.ParseException.yml\" sourcestartlinenumber=\"1\">Exception thrown when parsing fails.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.ValidationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.ValidationResult.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message.ValidationResult",
+      "Summary": "<p sourcefile=\"dotnet/api/Message.ValidationResult.yml\" sourcestartlinenumber=\"1\">Result of validation operation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "dotnet/api/Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/Message.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Message",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "dotnet/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/api/toc.html"
+        },
+        ".json": {
+          "relative_path": "dotnet/api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "dotnet/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "dotnet/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "dotnet/toc.html"
+        },
+        ".json": {
+          "relative_path": "dotnet/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Message Documentation | Message Documentation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Message Documentation | Message Documentation ">
+      
+      
+      <link rel="icon" href="images/logo.svg">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spec-works/message/blob/main/docs/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="images/logo.svg" alt="Message">
+            Message
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="message-documentation">Message Documentation</h1>
+
+<p>Welcome to the Message documentation. This component provides libraries for parsing, validating, and serializing Internet message format (message/rfc822) data according to <a href="https://www.rfc-editor.org/rfc/rfc5322">RFC 5322</a> and MIME (<a href="https://www.rfc-editor.org/rfc/rfc2045">RFC 2045</a>-<a href="https://www.rfc-editor.org/rfc/rfc2049">2049</a>).</p>
+<h2 id="what-is-messagerfc822">What is message/rfc822?</h2>
+<p>The <code>message/rfc822</code> media type represents Internet email messages. The format is defined by a family of specifications:</p>
+<ul>
+<li><strong>RFC 5322</strong> - Internet Message Format (headers like From, To, Subject, Date)</li>
+<li><strong>RFC 2045-2049</strong> - MIME (Multipurpose Internet Mail Extensions) for attachments, HTML, and non-ASCII content</li>
+</ul>
+<p>This library provides complete support for:</p>
+<ul>
+<li>Email header parsing and generation</li>
+<li>MIME multipart message handling</li>
+<li>Content-Transfer-Encoding (Base64, Quoted-Printable)</li>
+<li>RFC 2047 encoded-words for non-ASCII in headers</li>
+<li>Message validation against RFC requirements</li>
+</ul>
+<h2 id="available-implementations">Available Implementations</h2>
+<p>Choose the implementation that matches your technology stack:</p>
+<h3 id="net"><a href="dotnet/index.html">.NET</a></h3>
+<p>Full-featured .NET library for RFC 5322 + MIME parsing and generation.</p>
+<ul>
+<li><strong>Package</strong>: <a href="https://www.nuget.org/packages/SpecWorks.Message">SpecWorks.Message</a> on NuGet</li>
+<li><strong>Target Frameworks</strong>: .NET 10.0, .NET Standard 2.1</li>
+<li><strong>Language</strong>: C# with nullable reference types</li>
+<li><a href="dotnet/index.html">View .NET Documentation →</a></li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="net-1">.NET</h3>
+<pre><code class="lang-bash">dotnet add package SpecWorks.Message
+</code></pre>
+<pre><code class="lang-csharp">using Message;
+
+// Parse an email message
+var parser = new MessageParser();
+var message = parser.Parse(emailText);
+
+Console.WriteLine($&quot;From: {message.From}&quot;);
+Console.WriteLine($&quot;To: {message.To}&quot;);
+Console.WriteLine($&quot;Subject: {message.Subject}&quot;);
+Console.WriteLine($&quot;Body: {message.TextBody}&quot;);
+
+// Handle multipart messages
+if (message.IsMultipart)
+{
+    foreach (var part in message.Parts)
+    {
+        Console.WriteLine($&quot;Part: {part.ContentType}&quot;);
+    }
+}
+</code></pre>
+<h2 id="specification-compliance">Specification Compliance</h2>
+<p>All implementations follow these IETF specifications:</p>
+<table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.rfc-editor.org/rfc/rfc5322">RFC 5322</a></td>
+<td>Internet Message Format</td>
+<td>✅ Implemented</td>
+</tr>
+<tr>
+<td><a href="https://www.rfc-editor.org/rfc/rfc2045">RFC 2045</a></td>
+<td>MIME Part One: Format of Internet Message Bodies</td>
+<td>✅ Implemented</td>
+</tr>
+<tr>
+<td><a href="https://www.rfc-editor.org/rfc/rfc2046">RFC 2046</a></td>
+<td>MIME Part Two: Media Types</td>
+<td>✅ Implemented</td>
+</tr>
+<tr>
+<td><a href="https://www.rfc-editor.org/rfc/rfc2047">RFC 2047</a></td>
+<td>MIME Part Three: Non-ASCII Text in Headers</td>
+<td>✅ Implemented</td>
+</tr>
+<tr>
+<td><a href="https://www.rfc-editor.org/rfc/rfc2822">RFC 2822</a></td>
+<td>Internet Message Format (obsoleted by 5322)</td>
+<td>✅ Compatible</td>
+</tr>
+<tr>
+<td><a href="https://www.rfc-editor.org/rfc/rfc822">RFC 822</a></td>
+<td>Original message format</td>
+<td>✅ Compatible</td>
+</tr>
+</tbody>
+</table>
+<h2 id="test-cases">Test Cases</h2>
+<p>All implementations are tested against shared test cases in the <a href="https://github.com/spec-works/message/tree/main/testcases">testcases/</a> directory.</p>
+<h2 id="contributing">Contributing</h2>
+<p>Contributions are welcome! See the <a href="https://github.com/spec-works/message">GitHub repository</a> for:</p>
+<ul>
+<li>Issue tracking</li>
+<li>Pull request guidelines</li>
+<li>Development setup instructions</li>
+</ul>
+<h2 id="license">License</h2>
+<p>All Message implementations are licensed under the <a href="https://github.com/spec-works/message/blob/main/LICENSE">MIT License</a>.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li><strong>GitHub Repository</strong>: <a href="https://github.com/spec-works/message">github.com/spec-works/message</a></li>
+<li><strong>RFC 5322 Specification</strong>: <a href="https://www.rfc-editor.org/rfc/rfc5322">rfc-editor.org/rfc/rfc5322</a></li>
+<li><strong>SpecWorks Factory</strong>: <a href="https://spec-works.github.io">spec-works.github.io</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spec-works/message/blob/main/docs/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <a href='https://spec-works.github.io/'>SpecWorks Factory</a> | <a href='https://github.com/spec-works/message'>GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
